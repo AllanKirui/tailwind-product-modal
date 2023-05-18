@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
+    fontFamily: {
+      sans: ['"Exo 2"', "sans-serif"],
+    },
     extend: {
       colors: {
         elgengrau: "#161719",
