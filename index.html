@@ -12,7 +12,7 @@
     <div class="bg-cultured min-h-screen flex items-center justify-center">
       <!-- card -->
       <div
-        class="bg-white mx-auto p-8 flex flex-col items-center justify-center rounded-xl shadow-xl"
+        class="bg-white mx-auto p-8 md:p-14 flex flex-col md:flex-row md:gap-10 items-center md:items-start justify-center rounded-xl shadow-xl"
       >
         <!-- product image -->
         <div>
@@ -24,9 +24,9 @@
         </div>
 
         <!-- product info -->
-        <div class="text-elgengrau text-center">
+        <div class="text-elgengrau text-center md:text-left">
           <span
-            class="inline-block bg-elgengrau text-white py-1 px-3 mt-12 rounded-full"
+            class="inline-block bg-elgengrau text-white py-1 px-3 mt-12 md:mt-0 rounded-full"
             >Free shipping</span
           >
           <h1 class="text-2xl font-semibold mt-5 max-w-sm">
@@ -56,33 +56,35 @@
           </p>
 
           <!-- wishlist and add to cart buttons -->
-          <button
-            class="bg-white w-full h-16 mt-6 border-2 border-spanish-gray rounded-lg overflow-hidden group hover:bg-cultured hover:shadow-lg duration-300"
-          >
-            <div
-              class="flex justify-center items-center group-hover:-translate-y-0.5 duration-300"
+          <div class="mt-6 flex flex-col md:flex-row gap-6">
+            <button
+              class="bg-white w-full h-16 border-2 border-spanish-gray rounded-lg overflow-hidden group hover:bg-cultured hover:shadow-lg duration-300"
             >
-              <img
-                class="w-8 mr-3"
-                src="images/weight.png"
-                alt="add to cart image"
-              />Add to cart
-            </div>
-          </button>
+              <div
+                class="flex justify-center items-center group-hover:-translate-y-0.5 duration-300"
+              >
+                <img
+                  class="w-8 mr-3"
+                  src="images/weight.png"
+                  alt="add to cart image"
+                />Add to cart
+              </div>
+            </button>
 
-          <button
-            class="bg-white w-full h-16 mt-6 border-2 border-spanish-gray rounded-lg overflow-hidden group hover:bg-cultured hover:shadow-lg duration-300"
-          >
-            <div
-              class="flex justify-center items-center group-hover:-translate-y-0.5 duration-300"
+            <button
+              class="bg-white w-full h-16 border-2 border-spanish-gray rounded-lg overflow-hidden group hover:bg-cultured hover:shadow-lg duration-300"
             >
-              <img
-                class="w-8 mr-3"
-                src="images/heart.png"
-                alt="add to cart image"
-              />Add to wishlist
-            </div>
-          </button>
+              <div
+                class="flex justify-center items-center group-hover:-translate-y-0.5 duration-300"
+              >
+                <img
+                  class="w-8 mr-3"
+                  src="images/heart.png"
+                  alt="add to cart image"
+                />Add to wishlist
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>
